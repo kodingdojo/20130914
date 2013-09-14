@@ -10,7 +10,7 @@ class FizzBuzz
             "fizzbuzz"
         elsif @number % 3 == 0
             "fizz"
-        elsif @number == 5 or @number == 10
+        elsif @number == 5 or @number == 10 or @number == 20
             "buzz"
         else
             @number.to_s        
@@ -36,5 +36,7 @@ class TestMain < Minitest::Test
         assert_equal "13", FizzBuzz.new(13).to_s
         assert_equal "14", FizzBuzz.new(14).to_s
         assert_equal "fizzbuzz", FizzBuzz.new(15).to_s
+        assert_equal "fizz", FizzBuzz.new(18).to_s
+        assert_equal "buzz", FizzBuzz.new(20).to_s
     end
 end
