@@ -10,7 +10,7 @@ class FizzBuzz
             "fizzbuzz"
         elsif @number % 3 == 0
             "fizz"
-        elsif [5 * 1, 5 * 2, 5 * 4 ].include? @number
+        elsif @number % 5 == 0
             "buzz"
         else
             @number.to_s        
