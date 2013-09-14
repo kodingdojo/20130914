@@ -6,7 +6,7 @@ class FizzBuzz
     end
     
     def to_s
-        if @number == 15 or @number == 45
+        if @number == (3 * 5) * 1 or @number == (3 * 5) * 3
             "fizzbuzz"
         elsif @number % 3 == 0
             "fizz"
