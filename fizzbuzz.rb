@@ -3,6 +3,8 @@ require "minitest/autorun"
 def fizzbuzz(number)
     if number == 1
         "1"
+    elsif number == 2
+        "2"
     else
         "fizz"
     end
@@ -18,5 +20,6 @@ class TestFizzBuzz < Minitest::Test
 	
 	def test_neither
         assert_equal "1", fizzbuzz(1)
+        assert_equal "2", fizzbuzz(2)
 	end
 end
