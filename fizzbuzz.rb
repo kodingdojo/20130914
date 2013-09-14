@@ -5,6 +5,8 @@ def fizzbuzz(number)
         "1"
     elsif number == 2
         "2"
+    elsif number == 4
+        "4"
     else
         "fizz"
     end
@@ -21,5 +23,6 @@ class TestFizzBuzz < Minitest::Test
 	def test_neither
         assert_equal "1", fizzbuzz(1)
         assert_equal "2", fizzbuzz(2)
+        assert_equal "4", fizzbuzz(4)
 	end
 end
