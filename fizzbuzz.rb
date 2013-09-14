@@ -25,5 +25,6 @@ class TestMain < Minitest::Test
         assert_equal "4", FizzBuzz.new(4).to_s
         assert_equal "buzz", FizzBuzz.new(5).to_s
         assert_equal "fizz", FizzBuzz.new(6).to_s
+        assert_equal "7", FizzBuzz.new(7).to_s
     end
 end
