@@ -7,7 +7,7 @@ def fizzbuzz(number)
         "2"
     elsif number == 4
         "4"
-    elsif number == 3 * 1 or number == 3 * 3 or number == 3 * 4
+    elsif number % 3 == 0
         "fizz"    
     end
 end
