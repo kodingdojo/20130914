@@ -6,7 +6,7 @@ class FizzBuzz
     end
     
     def to_s
-        if @number == 3 or @number == 3 * 2 or @number == 3 * 3
+        if [3 * 1, 3 * 2, 3 * 3].include? @number
             "fizz"
         elsif @number == 5
             "buzz"
