@@ -7,12 +7,8 @@ def fizzbuzz(number)
         "2"
     elsif number == 4
         "4"
-    elsif number == 3 * 1
-        "fizz"
-    elsif number == 3 * 3
-        "fizz"
-    elsif number == 3 * 4
-        "fizz"   
+    elsif number == 3 * 1 or number == 3 * 3 or number == 3 * 4
+        "fizz"    
     end
 end
 
