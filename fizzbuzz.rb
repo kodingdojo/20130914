@@ -1,12 +1,14 @@
 require "minitest/autorun"
 
 def fizzbuzz(number)
-    true
+    "fizz"   
 end
 
 
 class TestFizzBuzz < Minitest::Test
 	def test_fizz
-		assert_equal true, fizzbuzz(3)
+		assert_equal "fizz", fizzbuzz(3)
+		assert_equal "fizz", fizzbuzz(9)
 	end
+	
 end
