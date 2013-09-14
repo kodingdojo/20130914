@@ -9,7 +9,9 @@ def fizzbuzz(number)
         "4"
     elsif number % 3 == 0
         "fizz"    
-    end
+    elsif number == 5
+        "buzz"
+    end    
 end
 
 
@@ -17,7 +19,11 @@ class TestFizzBuzz < Minitest::Test
 	def test_fizz
 		assert_equal "fizz", fizzbuzz(3)
 		assert_equal "fizz", fizzbuzz(9)
-		assert_equal "fizz", fizzbuzz(12)
+		assert_equal "fizz", fizzbuzz(12)		
+	end
+	
+	def test_buzz
+		assert_equal "buzz", fizzbuzz(5)			
 	end
 	
 	def test_neither
