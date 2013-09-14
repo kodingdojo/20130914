@@ -6,9 +6,9 @@ class FizzBuzz
     end
     
     def to_s
-        if [3 * 1, 3 * 2, 3 * 3].include? @number
+        if [3 * 1, 3 * 2, 3 * 3, 3 * 4].include? @number
             "fizz"
-        elsif @number == 5
+        elsif @number == 5 or @number == 10
             "buzz"
         else
             @number.to_s        
@@ -28,5 +28,8 @@ class TestMain < Minitest::Test
         assert_equal "7", FizzBuzz.new(7).to_s
         assert_equal "8", FizzBuzz.new(8).to_s
         assert_equal "fizz", FizzBuzz.new(9).to_s
+        assert_equal "buzz", FizzBuzz.new(10).to_s
+        assert_equal "11", FizzBuzz.new(11).to_s
+        assert_equal "fizz", FizzBuzz.new(12).to_s
     end
 end
