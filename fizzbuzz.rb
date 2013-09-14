@@ -31,5 +31,6 @@ class TestMain < Minitest::Test
         assert_equal "buzz", FizzBuzz.new(10).to_s
         assert_equal "11", FizzBuzz.new(11).to_s
         assert_equal "fizz", FizzBuzz.new(12).to_s
+        assert_equal "13", FizzBuzz.new(13).to_s
     end
 end
