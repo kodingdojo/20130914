@@ -6,7 +6,7 @@ class FizzBuzz
     end
     
     def to_s
-        if @number == 3 or @number == 3 * 2
+        if @number == 3 or @number == 3 * 2 or @number == 3 * 3
             "fizz"
         elsif @number == 5
             "buzz"
@@ -27,5 +27,6 @@ class TestMain < Minitest::Test
         assert_equal "fizz", FizzBuzz.new(6).to_s
         assert_equal "7", FizzBuzz.new(7).to_s
         assert_equal "8", FizzBuzz.new(8).to_s
+        assert_equal "fizz", FizzBuzz.new(9).to_s
     end
 end
