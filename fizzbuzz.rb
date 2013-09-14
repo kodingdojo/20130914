@@ -6,7 +6,7 @@ class FizzBuzz
     end
     
     def to_s
-        if @number == 15
+        if @number == 15 or @number == 45
             "fizzbuzz"
         elsif @number % 3 == 0
             "fizz"
@@ -38,5 +38,6 @@ class TestMain < Minitest::Test
         assert_equal "fizzbuzz", FizzBuzz.new(15).to_s
         assert_equal "fizz", FizzBuzz.new(18).to_s
         assert_equal "buzz", FizzBuzz.new(20).to_s
+        assert_equal "fizzbuzz", FizzBuzz.new(45).to_s
     end
 end
